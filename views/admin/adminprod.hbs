@@ -1,0 +1,36 @@
+<section>
+
+  <div class="container">
+    <div class="d-flex justify-content-end mb-3">
+      <a class="btn btn-primary mt-3 ml-auto" href="/admin/addpro">add products</a>
+    </div>
+
+    <table class="table">
+      <thead>
+        <tr>
+          
+          <th scope="col">brand</th>
+          <th scope="col">model</th>
+          <th scope="col">price</th>
+          <th scope="col">image</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each products}}
+          <tr>
+            
+            <td>{{bname}}</td>
+            <td>{{mname}}</td>
+            <td>{{pname}} </td>
+            <td><img style="width:50px" src="/images/prodimg/{{_id}}.jpg"/> </td>
+            <td>
+              <a class="btn btn-primary" href="/admin/proedit/{{_id}}">Edit</a>
+              <a class="btn btn-danger" href="/admin/prodelete/{{_id}}" onclick="return confirm('you want to delete {{bname}} {{mname}}..?')" >Delete</a>
+            </td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</section>

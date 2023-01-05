@@ -1,0 +1,57 @@
+<section>
+  <div class="container d-flex justify-content-center mt-5">
+
+    <div class="col-7 col-md-5">
+      <div class="d-flex justify-content-center mb-3">
+        <h5>
+          Add Products
+        </h5>
+      </div>
+
+      <form action="/admin/addpro" method="post" enctype="multipart/form-data">
+        <!-- Name input -->
+        <div class="form-outline mb-4">
+          <input
+            name="bname"
+            type="text"
+            id="form5Example1"
+            class="form-control"
+          />
+          <label class="form-label" for="form5Example1">brand name</label>
+        </div>
+
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+          <input
+            name="mname"
+            type="text"
+            id="form5Example2"
+            class="form-control"
+          />
+          <label class="form-label" for="form5Example2">model name</label>
+        </div>
+
+        <div class="form-outline mb-4">
+          <input
+            name="pname"
+            type="text"
+            id="form5Example2"
+            class="form-control"
+          />
+          <label class="form-label" for="form5Example2">price</label>
+        </div>
+
+        <div class="form-outline mb-4">
+          <input name="img" type="file" class="form-control" />
+          <label class="form-label" for="form5Example2">select image</label>
+        </div>
+
+        <!-- Submit button -->
+        <div class="d-flex justify-content-center">
+          <button type="submit" class="btn btn-primary d-block mb-4">Add product</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</section>

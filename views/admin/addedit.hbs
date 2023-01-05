@@ -1,0 +1,68 @@
+<section>
+  <div class="container d-flex justify-content-center mt-5">
+    <div class="col-7 col-md-5">
+      <div class="d-flex justify-content-center mb-3">
+        <h5>
+          Edit Product
+        </h5>
+      </div>
+      <form
+        action="/admin/proedit/{{product._id}}"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <!-- Name input -->
+        <div class="form-outline mb-4">
+          <input
+            name="bname"
+            type="text"
+            id="form5Example1"
+            class="form-control"
+            value="{{product.bname}}"
+          />
+          <label class="form-label" for="form5Example1">brand name</label>
+        </div>
+
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+          <input
+            name="mname"
+            type="text"
+            id="form5Example2"
+            class="form-control"
+            value="{{product.mname}}"
+          />
+          <label class="form-label" for="form5Example2">model name</label>
+        </div>
+
+        <div class="form-outline mb-4">
+          <input
+            name="pname"
+            type="text"
+            id="form5Example2"
+            class="form-control"
+            value="{{product.pname}}"
+          />
+          <label class="form-label" for="form5Example2">price</label>
+        </div>
+
+        <div class="form-outline mb-4">
+          <label class="form-label" for="form5Example2">select image</label>
+          <img
+            src="/images/prodimg/{{product._id}}.jpg"
+            style="width: 80px; ; "
+          />
+          <input name="img" type="file" class="form-control" />
+
+        </div>
+
+        <!-- Submit button -->
+        <div class="d-flex justify-content-center">
+          <button type="submit" class="btn btn-primary d-block mb-4">Update
+            product</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</section>

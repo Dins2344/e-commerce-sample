@@ -1,0 +1,51 @@
+<section>
+  <div class="mt-5 container d-flex justify-content-center">
+    <div class="col-8 col-md-6 col-lg-4">
+      <form action="/signup" method="post">
+        
+
+        <!-- Name input -->
+        <div class="form-outline mb-4">
+          <input name="Name" type="text" id="registerName" class="form-control" />
+          <label class="form-label" for="registerName">Name</label>
+        </div>
+
+        <!-- Username input -->
+        <div class="form-outline mb-4">
+          <input name="Uname" type="text" id="registerUsername" class="form-control" />
+          <label class="form-label" for="registerUsername">Username</label>
+        </div>
+
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+          <input name="Email" type="email" id="registerEmail" class="form-control" />
+          <label class="form-label" for="registerEmail">Email</label>
+        </div>
+
+        <!-- Password input -->
+        <div class="form-outline mb-4">
+          <input name="Password" type="password" id="registerPassword" class="form-control" />
+          <label class="form-label" for="registerPassword">Password</label>
+        </div>
+
+        <!-- Checkbox -->
+        <div class="form-check d-flex justify-content-center mb-4">
+          <input
+            class="form-check-input me-2"
+            type="checkbox"
+            value=""
+            id="registerCheck"
+            checked
+            aria-describedby="registerCheckHelpText"
+          />
+          <label class="form-check-label" for="registerCheck">
+            I have read and agree to the terms
+          </label>
+        </div>
+
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary btn-block mb-3">Sign up</button>
+      </form>
+    </div>
+  </div>
+</section>

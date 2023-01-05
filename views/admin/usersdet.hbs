@@ -1,0 +1,52 @@
+<section>
+
+  <div class="container mt-5">
+    <div class="d-flex justify-content-end mb-3">
+      <form action="search-user" method="post" >
+        <div class="input-group">
+          <input
+            type="search"
+            name="search"
+            class="form-control rounded"
+            placeholder="Search user"
+            aria-label="Search"
+            aria-describedby="search-addon"
+          />
+          <button type="submit" class="btn btn-outline-primary">search</button>
+        </div>
+      </form>
+
+    </div>
+
+    <table class="table">
+      <thead>
+        <tr>
+
+          <th scope="col">Name</th>
+          <th scope="col">User name</th>
+          <th scope="col">Email</th>
+          <th scope="col"></th>
+
+        </tr>
+      </thead>
+      <tbody>
+        {{#each users}}
+          <tr>
+
+            <td>{{Name}}</td>
+            <td>{{Uname}}</td>
+            <td>{{Email}} </td>
+            <td>
+              <a class="btn btn-primary" href="/admin/useredit/{{_id}}">Edit</a>
+              <a
+                class="btn btn-danger"
+                href="/admin/userdelete/{{_id}}"
+                onclick="return confirm('you want to delete {{Name}} data..?')"
+              >Delete</a>
+            </td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</section>

@@ -1,0 +1,59 @@
+<section>
+  <div class="container d-flex justify-content-center mt-5">
+    <div class="col-7 col-md-5">
+      <div class="d-flex justify-content-center mb-3">
+        <h5>
+          Edit User info
+        </h5>
+      </div>
+      <form
+        action="/admin/useredit/{{user._id}}"
+        method="post"
+      >
+        <!-- Name input -->
+        <div class="form-outline mb-4">
+          <input
+            name="Name"
+            type="text"
+            id="form5Example1"
+            class="form-control"
+            value="{{user.Name}}"
+          />
+          <label class="form-label" for="form5Example1">Name</label>
+        </div>
+
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+          <input
+            name="Uname"
+            type="text"
+            id="form5Example2"
+            class="form-control"
+            value="{{user.Uname}}"
+          />
+          <label class="form-label" for="form5Example2">User name</label>
+        </div>
+
+        <div class="form-outline mb-4">
+          <input
+            name="Email"
+            type="text"
+            id="form5Example2"
+            class="form-control"
+            value="{{user.Email}}"
+          />
+          <label class="form-label" for="form5Example2">Email address</label>
+        </div>
+
+        
+
+        <!-- Submit button -->
+        <div class="d-flex justify-content-center">
+          <button type="submit" class="btn btn-primary d-block mb-4">Update
+            user</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</section>
